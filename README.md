@@ -14,36 +14,40 @@ Introduction to Cloud Computing Final Project - Guess the Capital
  Docker
  Containers are isolated environments that package applications and their dependencies. Each container runs as an isolated process on the host operating system.
  Docker is an open-source platform that enables developers to automate the deployment and management of applications inside lightweight, isolated containers.
+ 
  IBM Cloud
+ 
  IBM Cloud is a cloud computing platform and suite of cloud-based services offered by IBM. It provides a range of infrastructure, platform, and software services to
  support the development, deployment, and management of various types of applications and workloads in the cloud.
+ 
  IBM Code Engine
- IBM Cloud Code Engine is a serverless compute platform provided by IBM Cloud. It allows developers to deploy and run containerized applications without the
- need to manage the underlying infrastructure. Abstracting away the complexities of server provisioning, scaling, and maintenance, enabling developers to focus on
- writing code and building applications.
+ IBM Cloud Code Engine is a serverless compute platform provided by IBM Cloud. It allows developers to deploy and run containerized applications without managing the underlying infrastructure. Abstracting away the complexities of server provisioning, scaling, and maintenance enables developers to focus on writing code and building applications.
+ 
  Working with files in Cloud IDE
  If you are new to Cloud IDE, this section will show you how to create and edit files, which are part of your project, in Cloud IDE.
- To view your files and directories inside Cloud IDE, click on this files icon to reveal it.
- If you have cloned (using git clone command) boilerplate/starting code, then it will look like below:
-Otherwise a blank project looks like this:
+ To view your files and directories inside Cloud IDE, click on the files icon to reveal it.
+ If you have cloned (using git clone command) the boilerplate/starting code, then it will look like below:
+Otherwise, a blank project looks like this:
+
  Create a new file
  You can right-click and select the New File option to create a file in your project.
  You can also choose File -> New File to do the same.
  It will then prompt you to enter name of this new file. In the example below, we are creating sample.html.
 Clicking on the file name sample.html in the directory structure will open the file on the right pane. You can create all different types of files; for example
  FILE_NAME.js for JavaScript file.
- In the example, we just pasted some basic html code and then saved the file.
+ In the example, we just pasted some basic HTML code and then saved the file.
  And saving it by:
  Going in the menu.
- Press 㭤 + S on Mac or CTRL + S on Windows.
- Or it can Autosave it for you too.
+ Press CTRL + S on Windows.
+ Or it can autosave it for you, too.
+
 Verify the environment and command line tools
- 1. Open a terminal window by using the menu in the editor: Terminal > New Terminal.
- Note:If the terminal is already opened, please skip this step.
- 2. Verify that docker CLI is installed.
+ 1. Open a terminal window using the editor's menu: Terminal > New Terminal.
+ Note: If the terminal is already open, please skip this step.
+ 2. Verify that Docker CLI is installed.
  docker --version
  You should see the following output, although the version may be different:
- 3. Verify that ibmcloud CLI is installed.
+ 3. Verify that the IBM Cloud CLI is installed.
  ibmcloud version              
             
           
@@ -51,15 +55,15 @@ Verify the environment and command line tools
 You should see the following output, although the version may be different:
 
  Start Code Engine
- 1. On the menu in your lab environment, Click on SN logo icon and then click the Cloud dropdown menu and select Code Engine. The code engine setup panel appears. Click Create Project to begin.
+ 1. On the menu in your lab environment, click on SN logo icon and then click the Cloud dropdown menu and select Code Engine. The code engine setup panel appears. Click Create Project to begin.
  
 2. The code engine environment takes a while to prepare. You will see the progress status is indicated in the setup panel.
 
 3. Once the code engine set up is complete, you can see that it is active. Click Code Engine CLI to begin the pre-configured CLI in the terminal as shown below.
 4. You will observe that the pre-configured CLI startup and the home directory are set to the current directory. As a part of the pre-configuration, the project has been set up, and Kubeconfig is set up. The details are shown on the terminal as follows.
-Set-up : Create application
+Set-up: Create application
 
- 1. Open a terminal window by using the menu in the editor: Terminal > New Terminal.
+ 1. Open a terminal window using the editor's menu: Terminal > New Terminal.
  2. If you are not currently in the project folder, copy and paste the following code to change to your project folder.
  cd /home/project
  3. Run the following command to clone the Git repository that contains the starter code needed for this project if the Git repository doesn't already exist.
